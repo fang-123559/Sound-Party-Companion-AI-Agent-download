@@ -1,0 +1,19 @@
+请用简单的中文，帮我在 Windows 11 x64 电脑上下载并安装 Sound Party Companion。它是用来管理 Xiaomi 蓝牙音箱 Pro 的非官方工具。我没用过 GitHub。请先给我能直接点击的安装包链接，然后按顺序告诉我该点哪里。我卡在哪一步，你就从那一步接着教我。
+
+请从项目发布页 https://github.com/fang-123559/SoundPartyCompanion/releases/latest 找到最新正式版。在页面底部的 Assets（下载文件）里，找名为 SoundPartyCompanion-Setup-<版本>-win-x64.exe 的安装包和同名的 .exe.sha256 校验文件。Assets 读不到时，查 https://api.github.com/repos/fang-123559/SoundPartyCompanion/releases/latest 的 assets 列表，使用其中的 browser_download_url。请给出实际查到的版本和链接。GitHub 的公开安装包可以直接下载，无需登录或开网盘会员。Source code (zip) 是源码压缩包，请跳过。
+
+如果你无法联网核实新版，可以给我下面这组已核实的 v0.1.1 备用链接，并说明版本。若链接在我电脑上也打不开，请让我把浏览器报错发给你，帮我判断卡在哪一步。下载来源限于这个项目的 GitHub 发布页及其附件。
+安装包 https://github.com/fang-123559/SoundPartyCompanion/releases/download/v0.1.1/SoundPartyCompanion-Setup-0.1.1-win-x64.exe
+校验文件 https://github.com/fang-123559/SoundPartyCompanion/releases/download/v0.1.1/SoundPartyCompanion-Setup-0.1.1-win-x64.exe.sha256
+
+如果我请你代下载，而且你能操作这台 Windows 电脑，请保存到我指定的目录或浏览器默认下载位置，确认文件下载完成并告诉我实际保存路径。如果你只能提供链接或在远程环境下载，请让我在自己的 Windows 电脑上用浏览器打开直链，按 Ctrl+J 查看下载进度和文件位置。
+
+请先帮我确认电脑是 Windows 11 x64。不确定时，教我打开“设置 → 系统 → 关于”，查看 Windows 版本和“系统类型”中的“基于 x64 的处理器”。运行安装包前，请核对它的 SHA256 与同版本校验文件中的值是否一致。你读不到我电脑上的文件时，教我用记事本打开 .sha256 文件，再在资源管理器中右击安装包，选择“复制文件地址”或“复制为路径”。打开 PowerShell，用复制的路径替换下面包含双引号的示例路径，确保实际路径外只有一对双引号。运行命令后，对比 Hash 与校验文件开头的 64 个十六进制字符，大小写可以不同。
+Get-FileHash -Algorithm SHA256 -LiteralPath "C:\路径\安装包.exe"
+
+如果校验结果不一致，请让我停止并回项目发布页重新下载。如果暂时无法完成校验，请告诉我缺哪一步。校验一致后，请指导我在 Windows 蓝牙设置中配对音箱，然后由我自己双击安装包，按安装向导操作，最后从开始菜单打开 Sound Party Companion。如果 Windows 提示拦截，请让我把提示原文发给你。
+
+如果我说“双击安装包没有反应”，请先确认我双击的这份安装包来自项目的 GitHub 发布页，且 SHA256 与同版本校验文件一致。满足这两个条件后，再指导我按下面的步骤排查。
+1. 在资源管理器中右键点击这份安装包，打开“属性 → 常规”，找到窗口底部的“安全”提示，看看提示右侧有没有“解除锁定”复选框。
+2. 如果有，勾选“解除锁定”，点击“应用 → 确定”，再双击同一个文件。这一步只移除这份文件的下载标记。如果弹出了安装向导，就继续按向导安装。
+3. 如果没有“解除锁定”选项，或重试后仍未弹出安装向导，请带我到“Windows 安全中心 → 病毒和威胁防护 → 保护历史记录”，查看有没有与这份安装包相关的记录。请让我告诉你 Windows 版本、重试结果，以及看到的提示原文。
