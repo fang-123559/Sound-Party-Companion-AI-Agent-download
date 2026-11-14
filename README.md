@@ -1,6 +1,11 @@
 # Sound Party Companion-AI/Agent download
 
-帮第一次使用 GitHub 的用户下载 Sound Party Companion 的 Windows 11 x64 安装包。两种方式都从原项目的 GitHub Releases 获取安装包，并提供 SHA256 校验、安装和启动排查步骤。
+这个仓库提供两种用 AI 获取 Sound Party Companion 安装包的方式，适合第一次使用 GitHub 的 Windows 11 x64 用户。两种方式都以原项目的 GitHub Releases 为下载来源，并提供 SHA256 校验、安装和启动排查步骤。
+
+- **AI 助手提示词**：复制[提示词全文](./download-with-ai.txt)，发送给豆包或其他 AI 聊天助手，请它提供安装包直链并逐步指导下载。
+- **Agent Skill**：将 [Skill ZIP](https://github.com/fang-123559/Sound-Party-Companion-AI-Agent-download/releases/latest/download/download-sound-party-companion.zip) 导入支持导入 Skill 的 Agent。具备本机下载权限的 Agent 可以代下载并校验文件，也可以提供链接和手动操作步骤。
+
+下面用已实测的豆包对话和豆包工作演示这两种用法。
 
 ## 豆包对话
 
