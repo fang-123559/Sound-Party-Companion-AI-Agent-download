@@ -6,6 +6,8 @@
 
 打开[豆包提示词](./download-with-ai.txt)，复制全文并发送给豆包。按它给出的链接和步骤在 Windows 电脑上下载。
 
+![P3：豆包对话返回安装包和 SHA256 校验文件的 GitHub 下载链接](./assets/doubao-chat.png)
+
 ## 豆包工作
 
 1. 下载 [Skill ZIP](https://github.com/fang-123559/SoundPartyCompanion-Doubao/releases/latest/download/download-sound-party-companion.zip)，把 ZIP 原文件上传到豆包工作。
@@ -14,6 +16,10 @@
 > 请从我上传的 ZIP 中导入并安装到项目级，同时启用 download-sound-party-companion 技能，帮我从 GitHub 下载最新版 Sound Party Companion 的 Windows 11 x64 安装包，核对 SHA256，并一步步指导我安装。
 
 可以直接查看 [SKILL.md](./download-sound-party-companion/SKILL.md)。
+
+![P1：豆包工作下载 v0.1.1 安装包并核对 SHA256，校验结果一致](./assets/doubao-work-checksum.png)
+
+![P2：Windows 资源管理器显示已下载的安装包和校验文件](./assets/doubao-work-files.png)
 
 ## 实测反馈
 
